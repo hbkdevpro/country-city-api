@@ -1,8 +1,10 @@
 package com.hamza.countrycityapi.service;
 
 import com.hamza.countrycityapi.domain.Country;
+import org.springframework.stereotype.Service;
 import java.util.List;
 
+@Service
 public class CountryService {
 
     private static final List<Country> COUNTRIES = List.of(
