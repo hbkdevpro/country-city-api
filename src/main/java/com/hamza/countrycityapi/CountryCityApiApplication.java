@@ -1,4 +1,4 @@
-package com.hamza.country_city_api;
+package com.hamza.countrycityapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
