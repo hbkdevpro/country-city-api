@@ -26,6 +26,11 @@ public class CityController {
     @Operation(summary = "Get a city by ID")
     public ResponseEntity<CityResponse> getCityById(@PathVariable Long cityId) {
         City city = cityService.getCityById(cityId);
+
+        if (city == null) {
+            return ResponseEntity.notFound().build();
+        }
+
         return ResponseEntity.ok(cityMapper.toResponse(city));
     }
 }
